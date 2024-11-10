@@ -1,7 +1,9 @@
 minikube vouting app
-
+...
 use deploy.yml
-
+...
+kubectl apply -f <file_name>
+...
 1- vouting-app-deploy.yml
 1.1- vouting-app-service.yml
 2- redis-deploy.yml
@@ -11,6 +13,9 @@ use deploy.yml
 4- worker-deploy.yml
 5- result-deploy.yml
 5.5- result-app-service.yml
-
+...
+kubectl get pods
+kubectl get services
+...
 minikube service vouting-service --url
 minikube service result-service --url
